@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[482],{63891:s=>{s.exports=JSON.parse('{"sourceUrl":"https://github.com/howmanysmall/ReductionUtility/blob/main","baseUrl":"/ReductionUtility/","classOrder":[],"apiCategories":[]}')}}]);
