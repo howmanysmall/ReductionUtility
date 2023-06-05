@@ -32,10 +32,10 @@ export type AnyAction = {[string]: any} & Action
 
 --[=[
 	A callable action creator type.
-	@interface ActionCreator<Type,Payload,Args...>
+	_interface ActionCreator<Type,Payload,Args...>
 	.name Type -- The name of the action.
 	.__call (Args...) -> (Payload & Action<Type>) -- The function that creates the action.
-	@within Types
+	_within Types
 ]=]
 export type ActionCreator<Type, Payload, Args...> = typeof(setmetatable(
 	{} :: {name: Type},
@@ -44,14 +44,14 @@ export type ActionCreator<Type, Payload, Args...> = typeof(setmetatable(
 
 --[=[
 	A reducer type with Action. This isn't actually exported, it's just called `Reducer` and has the same arguments as this.
-	@type ReducerWithAction<State,Action> (state: State?, action: Action) -> State
-	@within Types
+	_type ReducerWithAction<State,Action> (state: State?, action: Action) -> State
+	_within Types
 ]=]
 
 --[=[
 	A reducer type.
-	@type Reducer<State> (state: State?, action: AnyAction) -> State
-	@within Types
+	_type Reducer<State> (state: State?, action: AnyAction) -> State
+	_within Types
 ]=]
 
 export type Reducer<State = any, Action = AnyAction> = (state: State?, action: Action) -> State
