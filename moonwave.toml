@@ -1,0 +1,26 @@
+changelog = true
+gitSourceBranch = "main"
+
+[docusaurus]
+tagline = "Utility library for creating reducers."
+
+[[navbar.items]]
+href = "https://discord.gg/nhDpg96Srt"
+label = "Discord"
+position = "right"
+
+[home]
+enabled = true
+includeReadme = false
+
+[[home.features]]
+title = "Minimal codebase"
+description = "This library allows you to replicate parts of Rodux without installing all of Rodux."
+
+[[home.features]]
+title = "Typed for Luau"
+description = "The codebase is fully typed for Luau."
+
+[[home.features]]
+title = "Locked state"
+description = "Where Rodux doesn't force a locked state, ReducerUtility does!"

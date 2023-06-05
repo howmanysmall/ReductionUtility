@@ -1,0 +1,16 @@
+[package]
+name = "howmanysmall/reduction-utility"
+description = "A utility cleaner useReducer code."
+license = "MIT"
+version = "1.0.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = [
+	"docs", "build",
+	"README.md", ".gitignore", "changelog.md",
+	"aftman.toml", "selene.toml", "stylua.toml", "moonwave.toml",
+	"sourcemap.json", "wally.lock",
+]
+
+[dependencies]
+Locker = "howmanysmall/locker@1.0.0"
